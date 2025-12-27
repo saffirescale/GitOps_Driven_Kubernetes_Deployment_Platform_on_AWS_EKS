@@ -15,7 +15,7 @@ func TestMain(t *testing.T) {
 	}
 
 	rr := httptest.NewRecorder()
-	handler := http.HandlerFunc(homePage)
+	handler := http.HandlerFunc(aboutPage)
 
 	handler.ServeHTTP(rr, req)
 
